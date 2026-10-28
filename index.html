@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café & Panadería La Estación - Pan y Café Artesanal</title>
+    <!-- Bootstrap 5.3 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos personalizados integrados */
+        .color-cafe { color: #5c3d2e !important; }
+        .bg-cafe { background-color: #5c3d2e !important; }
+        .bg-crema { background-color: #f8f1e5 !important; }
+        .btn-cafe { background-color: #b85c38 !important; color: white !important; border: none; }
+        .btn-cafe:hover { background-color: #5c3d2e !important; }
+        .img-circulo { width: 70px; height: 70px; min-width: 70px; object-fit: cover; }
+        .max-mobile { max-width: 500px; margin: 0 auto; }
+    </style>
+</head>
+<body class="bg-light">
+
+    <div class="container p-3 my-2 max-mobile">
+
+        <!-- 1. ENCABEZADO PRINCIPAL (Header y Logo) -->
+        <header class="row align-items-center mb-3 bg-white p-3 mx-0 rounded-3 shadow-sm border">
+            <div class="col-4 text-center px-1">
+                <!-- Ruta actualizada con la carpeta imagenes/ -->
+                <img src="imagenes/logo.jpg" alt="Logo Café La Estación" class="img-fluid rounded-circle border img-circulo">
+            </div>
+            <div class="col-8 px-2">
+                <h1 class="fw-bold mb-0 color-cafe h4">LA ESTACIÓN</h1>
+                <p class="text-muted mb-0 small">Café & Panadería Artesanal</p>
+            </div>
+        </header>
+
+        <!-- 2. BANNER PRINCIPAL (Imagen representativa) -->
+        <section class="row mb-3 mx-0">
+            <div class="col-12 px-0 text-center">
+                <!-- Ruta actualizada con la carpeta imagenes/ -->
+                <img src="imagenes/banner.jpg" alt="Banner de bienvenida cafetería La Estación" class="img-fluid rounded-3 shadow-sm w-100" style="max-height: 200px; object-fit: cover;">
+            </div>
+        </section>
+
+        <!-- 3. DESCRIPCIÓN DEL NEGOCIO -->
+        <section class="row mb-3 mx-0">
+            <div class="col-12 bg-white p-3 rounded-3 shadow-sm border">
+                <h2 class="h6 fw-bold text-uppercase color-cafe">Sobre Nosotros</h2>
+                <p class="text-secondary small mb-0">
+                    En <strong>Café & Panadería La Estación</strong> elaboramos pan fresco todos los días con recetas tradicionales familiares. Disfruta de la mejor selección de café de especialidad, postres artesanales y desayunos variados en un ambiente cálido y acogedor.
+                </p>
+            </div>
+        </section>
+
+        <!-- 4. RECURSO MULTIMEDIA (AUDIO) -->
+        <section class="row mb-3 mx-0">
+            <div class="col-12 bg-crema p-3 rounded-3 shadow-sm border text-center">
+                <h3 class="h6 fw-bold color-cafe text-uppercase mb-2">Ambiente de Nuestra Cafetería</h3>
+                <p class="text-muted small mb-2">Escucha la melodía que acompaña tus mañanas:</p>
+                <!-- Ruta actualizada con la carpeta audio/ -->
+                <audio controls class="w-100">
+                    <source src="audio/audio-ambiente.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el reproductor de audio.
+                </audio>
+            </div>
+        </section>
+
+        <!-- 5. PRODUCTOS DESTACADOS (Imágenes y Textos) -->
+        <section class="row mb-2 mx-0">
+            <div class="col-12 px-1">
+                <h2 class="h6 fw-bold text-secondary text-uppercase">Nuestra Especialidad</h2>
+            </div>
+        </section>
+
+        <!-- Producto 1 -->
+        <article class="row mb-2 mx-0">
+            <div class="col-12 bg-white p-3 rounded-3 shadow-sm border d-flex align-items-center justify-content-between">
+                <div class="pe-2">
+                    <h3 class="fw-bold text-dark h6 mb-1">Pan Artesanal</h3>
+                    <p class="text-muted small mb-0">Horneado diariamente con masa madre e ingredientes naturales.</p>
+                </div>
+                <div class="rounded-circle border overflow-hidden bg-light img-circulo">
+                    <img src="imagenes/pan-artesanal.jpg" alt="Pan artesanal recién horneado" class="w-100 h-100" style="object-fit: cover;">
+                </div>
+            </div>
+        </article>
+
+        <!-- Producto 2 -->
+        <article class="row mb-2 mx-0">
+            <div class="col-12 bg-white p-3 rounded-3 shadow-sm border d-flex align-items-center justify-content-between">
+                <div class="rounded-circle border overflow-hidden bg-light me-2 img-circulo">
+                    <img src="imagenes/postres.jpg" alt="Postres y tortas artesanales" class="w-100 h-100" style="object-fit: cover;">
+                </div>
+                <div>
+                    <h3 class="fw-bold text-dark h6 mb-1">Postres & Pasteles</h3>
+                    <p class="text-muted small mb-0">Variedad de tartas, tres leches y galletas recién hechas.</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Producto 3 -->
+        <article class="row mb-2 mx-0">
+            <div class="col-12 bg-white p-3 rounded-3 shadow-sm border d-flex align-items-center justify-content-between">
+                <div class="pe-2">
+                    <h3 class="fw-bold text-dark h6 mb-1">Café de Especialidad</h3>
+                    <p class="text-muted small mb-0">Expreso, Capuchino y Latte preparados con grano 100% ecuatoriano.</p>
+                </div>
+                <div class="rounded-circle border overflow-hidden bg-light img-circulo">
+                    <img src="imagenes/cafes.jpg" alt="Taza de café capuchino" class="w-100 h-100" style="object-fit: cover;">
+                </div>
+            </div>
+        </article>
+
+        <!-- Producto 4 -->
+        <article class="row mb-3 mx-0">
+            <div class="col-12 bg-white p-3 rounded-3 shadow-sm border d-flex align-items-center justify-content-between">
+                <div class="rounded-circle border overflow-hidden bg-light me-2 img-circulo">
+                    <img src="imagenes/desayunos.jpg" alt="Combo de desayuno completo" class="w-100 h-100" style="object-fit: cover;">
+                </div>
+                <div>
+                    <h3 class="fw-bold text-dark h6 mb-1">Desayunos Completos</h3>
+                    <p class="text-muted small mb-0">Combos con huevos, tostadas, jugo natural y café.</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- 6. LISTA DE SERVICIOS -->
+        <section class="row mb-3 mx-0">
+            <div class="col-12 bg-white p-3 rounded-3 shadow-sm border-start border-4 border-warning">
+                <h3 class="h6 fw-bold mb-2 color-cafe">Servicios Adicionales</h3>
+                <ul class="list-unstyled mb-0 small text-secondary">
+                    <li class="mb-1">✔ Pedidos bajo reserva para eventos y cumpleaños.</li>
+                    <li class="mb-1">✔ Servicio a domicilio en el sector.</li>
+                    <li class="mb-1">✔ Venta de café en grano o molido por libras.</li>
+                    <li>✔ Zona Wi-Fi gratuita para clientes.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 7. TABLA DE MENÚ Y PRECIOS -->
+        <section class="row mb-3 mx-0">
+            <div class="col-12 bg-white p-3 rounded-3 shadow-sm border">
+                <h3 class="h6 fw-bold mb-3 text-secondary text-uppercase">Menú de Precios y Promociones</h3>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped table-sm text-center align-middle mb-0 small">
+                        <thead class="bg-cafe text-white">
+                            <tr>
+                                <th>Producto</th>
+                                <th>Precio Unitario</th>
+                                <th>Promoción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Café Capuchino</td>
+                                <td>$2.00</td>
+                                <td>2x1 los Martes</td>
+                            </tr>
+                            <tr>
+                                <td>Porción de Torta</td>
+                                <td>$2.50</td>
+                                <td>$3.50 con Café</td>
+                            </tr>
+                            <tr>
+                                <td>Combo Desayuno</td>
+                                <td>$4.00</td>
+                                <td>Incluye Jugo</td>
+                            </tr>
+                            <tr>
+                                <td>Funda de Pan (10 u.)</td>
+                                <td>$1.50</td>
+                                <td>Lleva 12 por $1.50</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. IFRAME: MAPA DE GOOGLE MAPS -->
+        <section class="row mb-3 mx-0">
+            <div class="col-12 bg-white p-3 rounded-3 shadow-sm border">
+                <h3 class="h6 fw-bold mb-2 text-secondary text-uppercase">Encuéntranos Aquí</h3>
+                <div class="ratio ratio-16x9 shadow-sm rounded-3 overflow-hidden">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14440.389227079182!2d-78.62586762759602!3d-0.9347323614894681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d4612a2a66669f%3A0x132af465d9e5cf72!2sPanader%C3%ADa%20Danecu!5e1!3m2!1ses!2sec!4v1793143783629!5m2!1ses!2sec" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. FORMULARIO DE CONTACTO Y RESERVAS -->
+        <section class="row mb-3 mx-0">
+            <div class="col-12 bg-white p-3 rounded-3 shadow-sm border">
+                <h3 class="h6 fw-bold mb-3 text-secondary text-uppercase">Haz tu Reserva o Pedido</h3>
+                <form>
+                    <div class="mb-2">
+                        <label for="nombre" class="form-label small text-muted mb-1">Nombre Completo:</label>
+                        <input type="text" id="nombre" class="form-control form-control-sm" placeholder="Ej. Ana López" required>
+                    </div>
+                    <div class="mb-2">
+                        <label for="correo" class="form-label small text-muted mb-1">Correo Electrónico:</label>
+                        <input type="email" id="correo" class="form-control form-control-sm" placeholder="correo@ejemplo.com" required>
+                    </div>
+                    <div class="mb-2">
+                        <label for="mensaje" class="form-label small text-muted mb-1">Detalle del Pedido o Reserva:</label>
+                        <textarea id="mensaje" class="form-control form-control-sm" rows="3" placeholder="Escribe tu pedido o fecha de reserva..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-sm w-100 fw-semibold btn-cafe">Enviar Pedido / Consulta</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- 10. PIE DE PÁGINA (Footer y Redes Sociales) -->
+        <footer class="row mx-0 p-3 rounded-3 shadow-sm text-center bg-crema border">
+            <div class="col-12 px-1">
+                <h3 class="fw-bold mb-2 h6 color-cafe">Síguenos en Redes Sociales</h3>
+                <p class="text-secondary small mb-2">WhatsApp Pedidos: +593 99 123 4567</p>
+
+                <div class="d-flex justify-content-center gap-2 mb-2">
+                    <a href="https://facebook.com" target="_blank" class="btn btn-sm btn-outline-dark rounded-pill px-3 py-1 small">Facebook</a>
+                    <a href="https://instagram.com" target="_blank" class="btn btn-sm btn-outline-dark rounded-pill px-3 py-1 small">Instagram</a>
+                    <a href="https://whatsapp.com" target="_blank" class="btn btn-sm btn-outline-dark rounded-pill px-3 py-1 small">WhatsApp</a>
+                </div>
+
+                <p class="text-muted mb-0 style-copyright" style="font-size: 0.7rem;">&copy; 2026 Café & Panadería La Estación. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Bootstrap 5.3 JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
